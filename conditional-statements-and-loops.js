@@ -189,4 +189,25 @@ do{
 }while(i <= 100)
 console.log(sum)
 
+let bulb = true;
+do{
+
+    const readline = require('readline')
+    const reader = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+
+    reader.question("Enter any number greater than 10: ", number => {
+        if(number > 10){
+            bulb = false
+            reader.close()
+        }
+   
+    })
+
+}while(bulb)
+
+
+
 
