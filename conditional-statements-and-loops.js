@@ -117,3 +117,76 @@ for(let i = 0; i < numbers2.length; i++){
     }
 }
 console.log(biggestNumber)
+
+
+
+// Exercise 4: While loops
+// 1. Print numbers from 1 to 10.
+// 2. Print all even numbers between 1 and 20.
+// 3. Calculate the sum of all numbers from 1 to 100 and print the result.
+// 4. Print all multiples of 5 less than 50.
+// # Hint: ‘%’
+
+console.log("Exercise 4.1:")
+
+let i = 1;
+
+while(i <= 10){
+    console.log(i)
+    i += 1
+}
+
+
+console.log("Exercise 4.2:")
+k = 1
+while(k < 20){
+    if(k % 2 == 0){
+        console.log(k)
+    }
+    k += 1
+}
+console.log("Exercise 4.3:")
+i = 0
+sum = 0
+while(i <= 100){
+    sum += i;
+    i += 1
+}
+console.log(sum)
+
+i = 1;
+console.log("Exercise 4.4:")
+while(i < 50){
+    if(i % 5 == 0){
+        console.log(i)
+    }
+    i += 1
+}
+
+
+// Exercise 5: Do While loops
+// 1. Print numbers from 1 to 10.
+// 2. Calculate the sum of all numbers from 1 to 100 and print the result.
+// 3. Prompt the user to enter a number greater than 10. Keep asking until
+// they enter a valid number.
+// 4. Create a simple guessing game where the user must guess a number
+// between 1 and 10. The game continues until the user guesses the correct
+// number.
+console.log("Exercise 5.1:")
+k = 1
+do{
+    console.log(k)
+    k++
+}while(k <= 10)
+
+
+console.log("Exercise 5.2:")
+sum = 0
+i = 0
+do{
+    sum += i;
+    i += 1
+}while(i <= 100)
+console.log(sum)
+
+
